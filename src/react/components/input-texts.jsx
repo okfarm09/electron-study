@@ -19,4 +19,4 @@ inputText.defaultProps = {
     inputClass: "input-text-1"
 }
 
-exports.inputText = inputText;
+export default inputText;

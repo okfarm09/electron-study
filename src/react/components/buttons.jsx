@@ -21,4 +21,4 @@ appButton.defaultProps = {
     elemId: ""
 }
 
-exports.appButton = appButton;
+export default appButton;

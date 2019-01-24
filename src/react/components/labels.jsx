@@ -19,4 +19,4 @@ inputLabel.defaultProps = {
     labelClass: "label-1"
 }
 
-exports.inputLabel = inputLabel;
+export default inputLabel;

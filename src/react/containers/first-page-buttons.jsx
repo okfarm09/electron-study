@@ -55,4 +55,4 @@ firstPageButtons.defaultProps = {
     button4: button4DefaultProps
 }
 
-exports.firstPageButtons = firstPageButtons;
+export default firstPageButtons;

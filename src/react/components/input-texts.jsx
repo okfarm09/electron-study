@@ -3,18 +3,18 @@ import PropTypes from "prop-types";
 
 const inputText = (props) => {
     return (
-        <input type="text" id={props.inputId} className={props.inputClass} value={props.textValue} />
+        <input type="text" id={props.elemId} className={props.inputClass} value={props.textValue} />
     );
 }
 
 inputText.propTypes = {
-    inputId: PropTypes.string,
+    elemId: PropTypes.string,
     textValue: PropTypes.string,
     inputClass: PropTypes.string
 }
 
 inputText.defaultProps = {
-    inputId: "",
+    elemId: "",
     textValue: "",
     inputClass: "input-text-1"
 }

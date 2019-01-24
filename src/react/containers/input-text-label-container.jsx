@@ -6,14 +6,14 @@ import inputText from "../components/input-texts";
 const inputTextLabelContainer = (props) => {
     return (
         <span>
-            <inputLabel inputId={props.inputId} labelText={props.labelText} labelClass={props.labelClass} />
-            <inputText inputId={props.inputId} textValue={props.textValue} inputClass={props.inputClass} />
+            <inputLabel inputId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
+            <inputText inputId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
         </span>
     );
 }
 
 inputTextLabelContainer.propTypes = {
-    inputId: PropTypes.string,
+    elemId: PropTypes.string,
     labelText: PropTypes.string,
     labelClass: PropTypes.string,
     textValue: PropTypes.string,
@@ -21,7 +21,7 @@ inputTextLabelContainer.propTypes = {
 }
 
 inputTextLabelContainer.defaultProps = {
-    inputId: "",
+    elemId: "",
     labelText: "Empty Label",
     labelClass: "label-1",
     textValue: "",

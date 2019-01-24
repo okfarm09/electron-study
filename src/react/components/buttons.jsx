@@ -17,7 +17,7 @@ appButton.propTypes = {
 
 appButton.defaultProps = {
     buttonClickEvent: () => console.log("Default Button Event"),
-    buttonClass: "button-1",
+    buttonClass: "btn btn-t1-1",
     elemId: ""
 }
 

@@ -10,22 +10,22 @@ body {margin:0;padding:0;}
 .btn-red::before {background:#ff7675;}
 
 /* Button for white background */
-.btn1 {border:1px solid #2d3436;background:none;padding:10px 20px;font-size:20px;font-family:"monserrat";cursor:pointer;margin:10px;transition:0.8s;position:relative;overflow:hidden;}
-.btn1::before {content:"";position:absolute;left:0;width:100%;height:0%;background:#2d3436;z-index:-1;transition:0.8s;}
+.btn {border:1px solid #2d3436;background:none;padding:10px 20px;font-size:20px;font-family:"monserrat";cursor:pointer;margin:10px;transition:0.8s;position:relative;overflow:hidden;min-width:200px;}
+.btn::before {content:"";position:absolute;left:0;width:100%;height:0%;background:#2d3436;z-index:-1;transition:0.8s;}
 
-.btn1-t1-1, .btn1-t1-2 {color:#2d3436;}
-.btn1-t1-3, .btn1-t1-4 {color:#ffffff;}
-.btn-blue .btn1-t1-1, .btn-blue .btn1-t1-2 {color:#3498db;}
-.btn-red .btn1-t1-1, .btn-red .btn1-t1-2 {color:#ff7675;}
+.btn-t1-1, .btn-t1-2 {color:#2d3436;}
+.btn-t1-3, .btn-t1-4 {color:#ffffff;}
+.btn-blue .btn-t1-1, .btn-blue .btn-t1-2 {color:#3498db;}
+.btn-red .btn-t1-1, .btn-red .btn-t1-2 {color:#ff7675;}
 
-.btn1-t1-1:hover, .btn1-t1-2:hover {color:#ffffff;}
-.btn1-t1-3:hover, .btn1-t1-4:hover {color:#2d3436;}
-.btn-blue .btn1-t1-3:hover, .btn-blue .btn1-t1-4:hover {color:#3498db;}
-.btn-red .btn1-t1-3:hover, .btn-red .btn1-t1-4:hover {color:#ff7675;}
+.btn-t1-1:hover, .btn-t1-2:hover {color:#ffffff;}
+.btn-t1-3:hover, .btn-t1-4:hover {color:#2d3436;}
+.btn-blue .btn-t1-3:hover, .btn-blue .btn-t1-4:hover {color:#3498db;}
+.btn-red .btn-t1-3:hover, .btn-red .btn-t1-4:hover {color:#ff7675;}
 
-.btn1-t1-1::before, .btn1-t1-3::before {top:0;border-radius:0 0 50% 50%;}
-.btn1-t1-2::before, .btn1-t1-4::before {bottom:0;border-radius:50% 50% 0 0;}
-.btn1-t1-3::before, .btn1-t1-4::before {height:180%;}
+.btn-t1-1::before, .btn-t1-3::before {top:0;border-radius:0 0 50% 50%;}
+.btn-t1-2::before, .btn-t1-4::before {bottom:0;border-radius:50% 50% 0 0;}
+.btn-t1-3::before, .btn-t1-4::before {height:180%;}
 
-.btn1-t1-1:hover::before, .btn1-t1-2:hover::before {height:180%;}
-.btn1-t1-3:hover::before, .btn1-t1-4:hover::before {height:0%;}
+.btn-t1-1:hover::before, .btn-t1-2:hover::before {height:180%;}
+.btn-t1-3:hover::before, .btn-t1-4:hover::before {height:0%;}

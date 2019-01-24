@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const inputText = (props) => {
+const InputText = (props) => {
     return (
         <input type="text" id={props.elemId} className={props.inputClass} value={props.textValue} />
     );
 }
 
-inputText.propTypes = {
+InputText.propTypes = {
     elemId: PropTypes.string,
     textValue: PropTypes.string,
     inputClass: PropTypes.string
 }
 
-inputText.defaultProps = {
+InputText.defaultProps = {
     elemId: "",
     textValue: "",
     inputClass: "input-text-1"
 }
 
-export default inputText;
+export default InputText;

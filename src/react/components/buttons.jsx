@@ -3,22 +3,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const appButton = (props) => {
+const AppButton = (props) => {
     return (
-        <a href="javascript:void(0);" onClick={props.buttonClickEvent} className={props.buttonClass} id={props.elemId}>{props.buttonText}</a>
+        <button onClick={props.buttonClickEvent} className={props.buttonClass} id={props.elemId}>{props.buttonText}</button>
     );
 }
 
-appButton.propTypes = {
+AppButton.propTypes = {
     buttonClickEvent: PropTypes.func,
     buttonClass: PropTypes.string,
     elemId: PropTypes.string
 }
 
-appButton.defaultProps = {
+AppButton.defaultProps = {
     buttonClickEvent: () => console.log("Default Button Event"),
     buttonClass: "btn btn-t1-1",
     elemId: ""
 }
 
-export default appButton;
+export default AppButton;

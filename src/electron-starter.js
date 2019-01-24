@@ -13,6 +13,7 @@ const createWindow = () => {
         slashes: true
     });
     win.loadURL(startUrl);
+    win.webContents.openDevTools();
     win.on("close", () => {
         win = null;
     });

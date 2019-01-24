@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const inputLabel = (props) => {
+const InputLabel = (props) => {
     return (
         <label htmlFor={props.elemId} className={props.labelClass}>{props.labelText}</label>
     );
 }
 
-inputLabel.propTypes = {
+InputLabel.propTypes = {
     elemId: PropTypes.string,
     labelText: PropTypes.string,
     labelClass: PropTypes.string
 }
 
-inputLabel.defaultProps = {
+InputLabel.defaultProps = {
     elemId: "",
     labelText: "Empty Label",
     labelClass: "label-1"
 }
 
-export default inputLabel;
+export default InputLabel;

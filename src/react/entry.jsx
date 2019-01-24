@@ -1,5 +1,5 @@
-import { React, Component } from "react";
-import firstPageButtons from "./containers/first-page-buttons";
+import React, { Component } from "react";
+import FirstPageButtons from "./containers/first-page-buttons";
 
 class EntryPage extends Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class EntryPage extends Component {
     render() {
         return (
             <div>
-                <firstPageButtons />
+                <FirstPageButtons />
             </div>
         );
     }

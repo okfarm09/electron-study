@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import inputLabel from "../components/labels";
-import inputText from "../components/input-texts";
+import InputLabel from "../components/labels";
+import InputText from "../components/input-texts";
 
 const inputTextLabelContainer = (props) => {
     return (
         <span>
-            <inputLabel inputId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
-            <inputText inputId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
+            <InputLabel inputId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
+            <InputText inputId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
         </span>
     );
 }

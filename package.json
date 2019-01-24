@@ -20,14 +20,24 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "start": "nf start",
-    "dist": "npm run react-build && build -w"
+    "dist": "npm run react-build && build -w",
+    "dist-linux64": "npm run react-build && build --linux --x64",
+    "dist-linux32": "npm run react-build && build --linux --x64",
+    "dist-linux": "npm run dist-linux64 && npm run dist-linux32"
   },
   "build": {
+    "productName": "ElectronReact",
+    "appId": "noid",
     "extends": null,
     "directories": {
       "buildResources": "public"
     },
-    "target": "zip"
+    "win": {
+      "target": "zip"
+    },
+    "linux": {
+      "target": "tar.gz"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"

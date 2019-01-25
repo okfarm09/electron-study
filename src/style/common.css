@@ -10,7 +10,7 @@ body {margin:0;padding:0;}
 .btn-red::before {background:#ff7675;}
 
 /* Button for white background */
-.btn {border:1px solid #2d3436;background:none;padding:10px 20px;font-size:20px;font-family:"monserrat";cursor:pointer;margin:10px;transition:0.8s;position:relative;overflow:hidden;min-width:200px;}
+.btn {border:1px solid #2d3436;background:none;padding:0.625em 1.25em;font-size:1.25em;font-family:"monserrat";cursor:pointer;margin:0.625em;transition:0.8s;position:relative;overflow:hidden;min-width:12.5em;}
 .btn::before {content:"";position:absolute;left:0;width:100%;height:0%;background:#2d3436;z-index:-1;transition:0.8s;}
 
 .btn-t1-1, .btn-t1-2 {color:#2d3436;}

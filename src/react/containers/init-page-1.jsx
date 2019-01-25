@@ -22,10 +22,9 @@ const capmaignPointDefaultObject = {
 const InitPage1 = (props) => {
     return (
         <div className="init-page-container">
-            <form>
-                <InputTextLabelContainer {...props.capmaignTitle} />
-                <InputTextLabelContainer {...props.capmaignPoint} />
-            </form>
+            <h1>캠페인 기본 설정</h1>
+            <InputTextLabelContainer {...props.capmaignTitle} />
+            <InputTextLabelContainer {...props.capmaignPoint} />
         </div>
     );
 }

@@ -5,10 +5,10 @@ import InputText from "../components/input-texts";
 
 const InputTextLabelContainer = (props) => {
     return (
-        <span className={props.wrapClass}>
+        <div className={props.wrapClass}>
             <InputLabel elemId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
             <InputText elemId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
-        </span>
+        </div>
     );
 }
 

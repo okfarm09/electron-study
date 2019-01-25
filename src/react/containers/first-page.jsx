@@ -27,18 +27,25 @@ const firstPageButtonsDefaultProps = {
         buttonClass: "btn btn-t1-1",
         elemId: "btn-main-quit",
         buttonText: "종료하기",
-        buttonClickEvent: () => console.log("main page button4 clicked! by FirstPage")
+        buttonClickEvent: () => {
+            const remote = require("electron").remote;
+            remote.getCurrentWindow.close();
+        }
     }
 };
 
+const closeWindowEvent = () => {
+    window.close();
+}
+
 class FirstPage extends Component {
     render() {
-        const { first, initCamp, loadCamp, inform } = this.props;
+        const { initCamp, loadCamp, inform } = this.props;
         const { button1, button2, button3, button4 } = this.props;
         button1.buttonClickEvent = initCamp;
         button2.buttonClickEvent = loadCamp;
         button3.buttonClickEvent = inform;
-        button4.buttonClickEvent = first;
+        button4.buttonClickEvent = closeWindowEvent;
         return (
             <div className="first-page">
                 <div className="first-page-title">

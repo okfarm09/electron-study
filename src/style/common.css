@@ -1,5 +1,11 @@
+@import "./noto-sans-korean.css";
+
 /* Universal */
-body {margin:0;padding:0;}
+body {margin:0;padding:0;font-family:"Noto Sans Korean"}
+
+/* Lists */
+ul {list-style:none;padding:0;margin:0;}
+li {display:block;}
 
 /* Buttons */
 /* Button colors */
@@ -30,6 +36,7 @@ body {margin:0;padding:0;}
 .btn-t1-1:hover::before, .btn-t1-2:hover::before {height:180%;}
 .btn-t1-3:hover::before, .btn-t1-4:hover::before {height:0%;}
 
-/* Lists */
-ul {list-style:none;}
-li {display:block;}
+/* First page */
+.first-page {text-align:center;}
+.first-page-title {margin-top:8em;margin-bottom:10em;}
+.first-page-title > h3 {font-size:4em;letter-spacing:0.15em;font-weight:normal;}

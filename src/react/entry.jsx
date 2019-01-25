@@ -1,18 +1,25 @@
 import React, { Component } from "react";
-import FirstPageButtons from "./containers/first-page-buttons";
+import FirstPage from "./containers/first-page";
 
 class EntryPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            showPage: "first"
+        };
     }
 
     render() {
-        return (
-            <div>
-                <FirstPageButtons />
-            </div>
-        );
+        const { showPage } = this.state;
+        if(showPage === "first") {
+            return (
+                <FirstPage />
+            );
+        } else {
+            return (
+                <div>빈 화면...</div>
+            );
+        }
     }
 }
 

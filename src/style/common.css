@@ -16,25 +16,25 @@ li {display:block;}
 .btn-red::before {background:#ff7675;}
 
 /* Button for white background */
-.btn {border:1px solid #2d3436;background:none;padding:0.625em 1.25em;font-size:1.25em;font-family:"monserrat";cursor:pointer;margin:0.625em;transition:0.8s;position:relative;overflow:hidden;min-width:12.5em;}
-.btn::before {content:"";position:absolute;left:0;width:100%;height:0%;background:#2d3436;z-index:-1;transition:0.8s;}
+.main-btn {border:1px solid #2d3436;background:none;padding:0.625em 1.25em;font-size:1.25em;font-family:"monserrat";cursor:pointer;margin:0.625em;transition:0.8s;position:relative;overflow:hidden;min-width:12.5em;}
+.main-btn::before {content:"";position:absolute;left:0;width:100%;height:0%;background:#2d3436;z-index:-1;transition:0.8s;}
 
-.btn-t1-1, .btn-t1-2 {color:#2d3436;}
-.btn-t1-3, .btn-t1-4 {color:#ffffff;}
-.btn-blue .btn-t1-1, .btn-blue .btn-t1-2 {color:#3498db;}
-.btn-red .btn-t1-1, .btn-red .btn-t1-2 {color:#ff7675;}
+.main-btn-t1-1, .main-btn-t1-2 {color:#2d3436;}
+.main-btn-t1-3, .main-btn-t1-4 {color:#ffffff;}
+.btn-blue .main-btn-t1-1, .btn-blue .main-btn-t1-2 {color:#3498db;}
+.btn-red .main-btn-t1-1, .btn-red .main-btn-t1-2 {color:#ff7675;}
 
-.btn-t1-1:hover, .btn-t1-2:hover {color:#ffffff;}
-.btn-t1-3:hover, .btn-t1-4:hover {color:#2d3436;}
-.btn-blue .btn-t1-3:hover, .btn-blue .btn-t1-4:hover {color:#3498db;}
-.btn-red .btn-t1-3:hover, .btn-red .btn-t1-4:hover {color:#ff7675;}
+.main-btn-t1-1:hover, .main-btn-t1-2:hover {color:#ffffff;}
+.main-btn-t1-3:hover, .main-btn-t1-4:hover {color:#2d3436;}
+.btn-blue .main-btn-t1-3:hover, .btn-blue .main-btn-t1-4:hover {color:#3498db;}
+.btn-red .main-btn-t1-3:hover, .btn-red .main-btn-t1-4:hover {color:#ff7675;}
 
-.btn-t1-1::before, .btn-t1-3::before {top:0;border-radius:0 0 50% 50%;}
-.btn-t1-2::before, .btn-t1-4::before {bottom:0;border-radius:50% 50% 0 0;}
-.btn-t1-3::before, .btn-t1-4::before {height:180%;}
+.main-btn-t1-1::before, .main-btn-t1-3::before {top:0;border-radius:0 0 50% 50%;}
+.main-btn-t1-2::before, .main-btn-t1-4::before {bottom:0;border-radius:50% 50% 0 0;}
+.main-btn-t1-3::before, .main-btn-t1-4::before {height:180%;}
 
-.btn-t1-1:hover::before, .btn-t1-2:hover::before {height:180%;}
-.btn-t1-3:hover::before, .btn-t1-4:hover::before {height:0%;}
+.main-btn-t1-1:hover::before, .main-btn-t1-2:hover::before {height:180%;}
+.main-btn-t1-3:hover::before, .main-btn-t1-4:hover::before {height:0%;}
 
 /* First page */
 .first-page {text-align:center;}

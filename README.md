@@ -12,8 +12,8 @@ dependency 관련해서는
 초기 셋팅에 관해서는
 [Doocong](http://doocong.com/)님의 블로그를 참고했습니다.
 
-메인 페이지 버튼 스타일은
-[DarkCode](https://youtu.be/MLfAW55_4cY)의 유튜브를 참고했습니다.
+버튼이나 입력 폼 디자인은
+유튜브 채널 [DarkCode](https://youtu.be/MLfAW55_4cY)을 참고했습니다.
 
 테스트용 스크립트:
 ### `npm start`

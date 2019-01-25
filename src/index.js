@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import EntryPage from "./react/entry";
+import Version from "./react/components/version";
 import "./style/common.css";
 
 import { createStore } from "redux";
@@ -14,4 +15,9 @@ ReactDOM.render(
         <EntryPage />
     </Provider>,
     document.getElementById("root")
+);
+
+ReactDOM.render(
+    <Version />,
+    document.getElementById("under-version")
 );

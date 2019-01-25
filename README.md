@@ -19,4 +19,11 @@ dependency 관련해서는
 ### `npm start`
 
 빌드용 스크립트:
-### `npm dist`
+
+윈도우용
+### `npm run dist`
+
+리눅스용
+### `npm run dist-linux`
+
+맥은 없습니다. 제가 맥을 가지고 있지 않으니까요...

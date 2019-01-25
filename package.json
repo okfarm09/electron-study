@@ -53,6 +53,8 @@
     "electron-builder": "^20.38.5",
     "electron-react-devtools": "^0.5.3",
     "foreman": "^3.0.1",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
   }
 }

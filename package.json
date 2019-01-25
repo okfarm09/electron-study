@@ -56,5 +56,10 @@
     "prop-types": "^15.6.2",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1"
+  },
+  "description": "",
+  "author": {
+    "name": "Greg Nam",
+    "email": "okfarm09@gmail.com"
   }
 }

@@ -43,3 +43,8 @@ li {display:block;}
 
 /* Under Version area */
 .under-version-area {position:fixed;right:2em;bottom:2em;}
+
+/* Full Form Wrap */
+.full-form-wrap {display:block;width:80%;margin:0 auto;padding:1.1em 0em;}
+.input-label {font-size:1.8em;}
+.input-text {margin-left:3em;width:60%;font-size:1.8em;}

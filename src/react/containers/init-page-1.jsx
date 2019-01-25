@@ -7,14 +7,16 @@ const capmaignTitleDefaultObject = {
     labelText: "캠페인 타이틀",
     labelClass: "input-label",
     textValue: "",
-    inputClass: "input-text"
+    inputClass: "input-text",
+    wrapClass: "full-form-wrap"
 };
 const capmaignPointDefaultObject = {
     elemId: "camp-point",
     labelText: "캠페인 포인트",
     labelClass: "input-label",
     textValue: "0",
-    inputClass: "input-text"
+    inputClass: "input-text",
+    wrapClass: "full-form-wrap"
 };
 
 const InitPage1 = (props) => {

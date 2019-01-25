@@ -3,16 +3,16 @@ import PropTypes from "prop-types";
 import InputLabel from "../components/labels";
 import InputText from "../components/input-texts";
 
-const inputTextLabelContainer = (props) => {
+const InputTextLabelContainer = (props) => {
     return (
         <span>
-            <InputLabel inputId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
-            <InputText inputId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
+            <InputLabel elemId={props.elemId} labelText={props.labelText} labelClass={props.labelClass} />
+            <InputText elemId={props.elemId} textValue={props.textValue} inputClass={props.inputClass} />
         </span>
     );
 }
 
-inputTextLabelContainer.propTypes = {
+InputTextLabelContainer.propTypes = {
     elemId: PropTypes.string,
     labelText: PropTypes.string,
     labelClass: PropTypes.string,
@@ -20,10 +20,12 @@ inputTextLabelContainer.propTypes = {
     inputClass: PropTypes.string
 }
 
-inputTextLabelContainer.defaultProps = {
+InputTextLabelContainer.defaultProps = {
     elemId: "",
     labelText: "Empty Label",
     labelClass: "label-1",
     textValue: "",
     inputClass: "input-text-1"
 }
+
+export default InputTextLabelContainer;

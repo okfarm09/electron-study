@@ -35,10 +35,10 @@ class FirstPage extends Component {
     render() {
         const { first, initCamp, loadCamp, inform } = this.props;
         const { button1, button2, button3, button4 } = this.props;
-        button1.buttonClickEvent = first;
-        button2.buttonClickEvent = initCamp;
-        button3.buttonClickEvent = loadCamp;
-        button4.buttonClickEvent = inform;
+        button1.buttonClickEvent = initCamp;
+        button2.buttonClickEvent = loadCamp;
+        button3.buttonClickEvent = inform;
+        button4.buttonClickEvent = first;
         return (
             <div className="first-page">
                 <div className="first-page-title">

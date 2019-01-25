@@ -57,7 +57,7 @@
     "react-redux": "^6.0.0",
     "redux": "^4.0.1"
   },
-  "description": "",
+  "description": "Study for electron and react",
   "author": {
     "name": "Greg Nam",
     "email": "okfarm09@gmail.com"

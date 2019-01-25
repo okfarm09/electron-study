@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import FirstPageButtons from "./first-page-buttons";
+import * as pageActions from "../actions/page-action";
+import { connect } from "react-redux";
 
 const firstPageButtonsDefaultProps = {
     button1: {
@@ -29,16 +31,35 @@ const firstPageButtonsDefaultProps = {
     }
 };
 
-const FirstPage = (props) => {
-    return (
-        <div className="first-page">
-            <div className="first-page-title">
-                <h3>캠페인 빌더</h3>
+class FirstPage extends Component {
+    render() {
+        const { first, initCamp, loadCamp, inform } = this.props;
+        const { button1, button2, button3, button4 } = this.props;
+        button1.buttonClickEvent = first;
+        button2.buttonClickEvent = initCamp;
+        button3.buttonClickEvent = loadCamp;
+        button4.buttonClickEvent = inform;
+        return (
+            <div className="first-page">
+                <div className="first-page-title">
+                    <h3>캠페인 빌더</h3>
+                </div>
+                <FirstPageButtons button1={button1} button2={button2} button3={button3} button4={button4} />
             </div>
-            <FirstPageButtons {...props.firstPageButtons} />
-        </div>
-    );
+        );
+    }
 }
+
+const mapStateToProps = (state) => ({
+    showPage: state.showPage
+});
+
+const mapToDispatch = (dispatch) => ({
+    first: () => dispatch(pageActions.first()),
+    initCamp: () => dispatch(pageActions.initCampaign()),
+    loadCamp: () => dispatch(pageActions.loadCampaign()),
+    inform: () => dispatch(pageActions.information())
+});
 
 FirstPage.propTypes = {
     firstPageButtons: PropTypes.object
@@ -48,4 +69,4 @@ FirstPage.defaultProps = {
     firstPageButtons: firstPageButtonsDefaultProps
 }
 
-export default FirstPage;
+export default connect(mapStateToProps, mapToDispatch)(FirstPage);

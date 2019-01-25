@@ -34,7 +34,7 @@ const campaignConceptDefaultObject = {
 const InitPage1 = (props) => {
     const campIdNumber = new Date().getTime();
     return (
-        <div className="init-page-container">
+        <div className="init-page-first">
             <h1>캠페인 기본 설정</h1>
             <InputTextLabelContainer {...props.campaignTitle} />
             <InputNumberLabelContainer {...props.campaignPoint} />

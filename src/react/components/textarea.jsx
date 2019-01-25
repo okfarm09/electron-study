@@ -20,7 +20,7 @@ class TextArea extends Component {
         const { elemId, inputClass } = this.props;
         const { textValue } = this.state;
         return (
-            <textarea id={elemId} className={inputClass} onChange={this.handleChange}>{(textValue)? textValue : ''}</textarea>
+            <textarea id={elemId} className={inputClass} onChange={this.handleChange} defaultValue={(textValue)? textValue : ''}></textarea>
         );
     }
 }

@@ -27,10 +27,7 @@ const firstPageButtonsDefaultProps = {
         buttonClass: "main-btn main-btn-t1-1",
         elemId: "btn-main-quit",
         buttonText: "종료하기",
-        buttonClickEvent: () => {
-            const remote = window.require("electron").remote;
-            remote.getCurrentWindow.close();
-        }
+        buttonClickEvent: () => console.log("main page button4 clicked! by FirstPage")
     }
 };
 

@@ -33,10 +33,12 @@
       "buildResources": "public"
     },
     "win": {
-      "target": "zip"
+      "target": "zip",
+      "icon": "./res/icon.png"
     },
     "linux": {
-      "target": "AppImage"
+      "target": "AppImage",
+      "icon": "./res/icon.png"
     }
   },
   "eslintConfig": {

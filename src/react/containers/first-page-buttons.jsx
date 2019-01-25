@@ -33,10 +33,20 @@ const button4DefaultProps = {
 const FirstPageButtons = (props) => {
     return (
         <div className="first-page-buttons">
-            <AppButton {...props.button1} /> {/* 새로 만들기 */}
-            <AppButton {...props.button2} /> {/* 불러오기 */}
-            <AppButton {...props.button3} /> {/* 정보 */}
-            <AppButton {...props.button4} /> {/* 종료 */}
+            <ul>
+                <li>
+                    <AppButton {...props.button1} /> {/* 새로 만들기 */}
+                </li>
+                <li>
+                    <AppButton {...props.button2} /> {/* 불러오기 */}
+                </li>
+                <li>
+                    <AppButton {...props.button3} /> {/* 정보 */}
+                </li>
+                <li>
+                    <AppButton {...props.button4} /> {/* 종료 */}
+                </li>
+            </ul>
         </div>
     );
 }

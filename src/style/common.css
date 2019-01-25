@@ -36,6 +36,9 @@ li {display:block;}
 .main-btn-t1-1:hover::before, .main-btn-t1-2:hover::before {height:180%;}
 .main-btn-t1-3:hover::before, .main-btn-t1-4:hover::before {height:0%;}
 
+/* Button for form */
+.init-button {text-decoration:none;display:inline-block;background:#9b59b6;padding:0.8em 0;color:white;cursor:pointer;margin-top:0.5em;width:100%;}
+
 /* First page */
 .first-page {text-align:center;}
 .first-page-title {margin-top:8em;margin-bottom:10em;}

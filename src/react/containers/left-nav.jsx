@@ -50,7 +50,6 @@ class LeftNavigation extends Component {
     render() {
         const { first, initCamp, loadCamp, inform } = this.props;
         const { anchor1, anchor2, anchor3, anchor4, anchor5 } = this.props.leftNavigationAnchors;
-        console.log(this.props);
         anchor1.anchorClickEvent = first;
         anchor2.anchorClickEvent = initCamp;
         anchor3.anchorClickEvent = loadCamp;

@@ -2,26 +2,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const LeftAnchor = (props) => {
+const ButtonAnchor = (props) => {
     return (
-        <a href="#" style={{background:props.bgColor}} id={props.elemId} className={props.anchorClass} onClick={props.anchorClickEvent}>{props.aText}</a>
+        <a href="#" id={props.elemId} className={props.anchorClass} onClick={props.anchorClickEvent}>{props.aText}</a>
     );
 }
 
-LeftAnchor.propTypes = {
-    bgColor: PropTypes.string,
+ButtonAnchor.propTypes = {
     elemId: PropTypes.string,
     anchorClass: PropTypes.string,
     aText: PropTypes.string,
     anchorClickEvent: PropTypes.func
 }
 
-LeftAnchor.defaultProps = {
-    bgColor: "#3498db",
+ButtonAnchor.defaultProps = {
     elemId: "",
     anchorClass: "anchor-1",
     aText: "메인화면",
     anchorClickEvent: () => console.log("Anchor clicked!")
 }
 
-export default LeftAnchor;
+export default ButtonAnchor;

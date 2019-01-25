@@ -13,15 +13,17 @@ const capmaignPointDefaultObject = {
     elemId: "camp-point",
     labelText: "캠페인 포인트",
     labelClass: "input-label",
-    textValue: "",
+    textValue: "0",
     inputClass: "input-text"
 };
 
 const InitPage1 = (props) => {
     return (
         <div className="init-page-container">
-            <InputTextLabelContainer {...props.capmaignTitle} />
-            <InputTextLabelContainer {...props.capmaignPoint} />
+            <form>
+                <InputTextLabelContainer {...props.capmaignTitle} />
+                <InputTextLabelContainer {...props.capmaignPoint} />
+            </form>
         </div>
     );
 }

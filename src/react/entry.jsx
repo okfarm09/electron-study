@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FirstPage from "./containers/first-page";
+import InitPage from "./containers/init-page";
 import * as pages from "./utils/page-keys";
 import { connect } from "react-redux";
 
@@ -32,6 +33,10 @@ class EntryPage extends Component {
         if(showPage === pages.first) {
             return (
                 <FirstPage {...firstPageButtonsDefaultProps} />
+            );
+        } else if(showPage === pages.initCampaign) {
+            return (
+                <InitPage />
             );
         } else {
             return (

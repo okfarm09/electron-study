@@ -28,7 +28,7 @@ const firstPageButtonsDefaultProps = {
         elemId: "btn-main-quit",
         buttonText: "종료하기",
         buttonClickEvent: () => {
-            const remote = require("electron").remote;
+            const remote = window.require("electron").remote;
             remote.getCurrentWindow.close();
         }
     }
@@ -52,6 +52,7 @@ class FirstPage extends Component {
                     <h3>캠페인 빌더</h3>
                 </div>
                 <FirstPageButtons button1={button1} button2={button2} button3={button3} button4={button4} />
+                {window.require('electron').remote.app.getVersion()}
             </div>
         );
     }

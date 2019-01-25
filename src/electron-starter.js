@@ -4,8 +4,15 @@ const path = require("path");
 
 let win;
 
+const windowOptions = {
+    width:1000,
+    height:1000,
+    resizable:false,
+    icon: path.join(__dirname, "/../res/icon.png")
+}
+
 const createWindow = () => {
-    win = new BrowserWindow({ width:1000, height:1000, resizable:false });
+    win = new BrowserWindow(windowOptions);
     const startUrl = process.env.ELECTRON_START_URL || url.format({
         pathname: path.join(__dirname, "/../build/index.html"),
         protocol: "file:",

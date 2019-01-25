@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import AppButton from "../components/buttons";
 
 const button1DefaultProps = {
-    buttonClass: "main-btn main-btn-t1-1",
+    buttonClass: "btn-green main-btn main-btn-t1-1",
     elemId: "btn-main-new",
     buttonText: "새로만들기",
     buttonClickEvent: () => console.log("main page button1 clicked!")
 };
 
 const button2DefaultProps = {
-    buttonClass: "main-btn main-btn-t1-1",
+    buttonClass: "btn-blue main-btn main-btn-t1-1",
     elemId: "btn-main-load",
     buttonText: "불러오기",
     buttonClickEvent: () => console.log("main page button2 clicked!")
@@ -19,12 +19,12 @@ const button2DefaultProps = {
 const button3DefaultProps = {
     buttonClass: "main-btn main-btn-t1-1",
     elemId: "btn-main-info",
-    buttonText: "프로그램정보",
+    buttonText: "도움말",
     buttonClickEvent: () => console.log("main page button3 clicked!")
 };
 
 const button4DefaultProps = {
-    buttonClass: "main-btn main-btn-t1-1",
+    buttonClass: "btn-red main-btn main-btn-t1-1",
     elemId: "btn-main-quit",
     buttonText: "종료하기",
     buttonClickEvent: () => console.log("main page button4 clicked!")

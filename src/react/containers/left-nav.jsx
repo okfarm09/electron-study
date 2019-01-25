@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 
 const leftNavigationAnchorsDefaultProps = {
     anchor1: {
-        bgColor: "#3498db",
+        bgColor: "#778899",
         elemId: "left-anchor-first",
         anchorClass: "left-anchor",
         aText: "초기화면",
@@ -20,17 +20,17 @@ const leftNavigationAnchorsDefaultProps = {
         anchorClickEvent: () => console.log("main page anchor2 clicked! by FirstPage")
     },
     anchor3: {
-        bgColor: "#2980b9",
+        bgColor: "#3498db",
         elemId: "left-anchor-load",
         anchorClass: "left-anchor",
         aText: "불러오기",
         anchorClickEvent: () => console.log("main page anchor3 clicked! by FirstPage")
     },
     anchor4: {
-        bgColor: "#2c3e50",
+        bgColor: "#2d3436",
         elemId: "left-anchor-info",
         anchorClass: "left-anchor",
-        aText: "정보",
+        aText: "도움말",
         anchorClickEvent: () => console.log("main page anchor4 clicked! by FirstPage")
     },
     anchor5: {

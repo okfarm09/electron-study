@@ -6,13 +6,13 @@ import { connect } from "react-redux";
 
 const firstPageButtonsDefaultProps = {
     button1: {
-        buttonClass: "main-btn main-btn-t1-1",
+        buttonClass: "btn-green main-btn main-btn-t1-1",
         elemId: "btn-main-new",
         buttonText: "새로만들기",
         buttonClickEvent: () => console.log("main page button1 clicked! by FirstPage")
     },
     button2: {
-        buttonClass: "main-btn main-btn-t1-1",
+        buttonClass: "btn-blue main-btn main-btn-t1-1",
         elemId: "btn-main-load",
         buttonText: "불러오기",
         buttonClickEvent: () => console.log("main page button2 clicked! by FirstPage")
@@ -20,11 +20,11 @@ const firstPageButtonsDefaultProps = {
     button3: {
         buttonClass: "main-btn main-btn-t1-1",
         elemId: "btn-main-info",
-        buttonText: "프로그램정보",
+        buttonText: "도움말",
         buttonClickEvent: () => console.log("main page button3 clicked! by FirstPage")
     },
     button4: {
-        buttonClass: "main-btn main-btn-t1-1",
+        buttonClass: "btn-red main-btn main-btn-t1-1",
         elemId: "btn-main-quit",
         buttonText: "종료하기",
         buttonClickEvent: () => console.log("main page button4 clicked! by FirstPage")
@@ -38,7 +38,7 @@ const closeWindowEvent = () => {
 class FirstPage extends Component {
     render() {
         const { initCamp, loadCamp, inform } = this.props;
-        const { button1, button2, button3, button4 } = this.props;
+        const { button1, button2, button3, button4 } = this.props.firstPageButtons;
         button1.buttonClickEvent = initCamp;
         button2.buttonClickEvent = loadCamp;
         button3.buttonClickEvent = inform;

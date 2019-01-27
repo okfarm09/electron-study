@@ -22,8 +22,11 @@
     "start": "nf start",
     "dist": "npm run react-build && build -w",
     "dist-linux64": "npm run react-build && build --linux --x64",
-    "dist-linux32": "npm run react-build && build --linux --x64",
-    "dist-linux": "npm run dist-linux64 && npm run dist-linux32"
+    "dist-linux32": "npm run react-build && build --linux --ia32",
+    "dist-linux": "npm run dist-linux64 && npm run dist-linux32",
+    "dist-win64": "npm run react-build && build --win --x64",
+    "dist-win32": "npm run react-build && build --win --ia32",
+    "dist-win": "npm run dist-win64 && npm run dist-win32"
   },
   "build": {
     "productName": "ElectronReact",

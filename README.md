@@ -21,7 +21,7 @@ dependency 관련해서는
 빌드용 스크립트:
 
 윈도우용
-### `npm run dist`
+### `npm run dist-win`
 
 리눅스용
 ### `npm run dist-linux`

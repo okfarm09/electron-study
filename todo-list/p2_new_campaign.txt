@@ -1,0 +1,16 @@
+화면 구성
+    - 룰북 선택 (나중에 언젠가)
+    - 캠페인 기본 설정
+        - 캠페인 타이틀 <input text>
+        - 캠페인 포인트 <input number>
+        - 캠페인 포인트 min / max 비율 <input number>
+        - 캠페인 컨셉 <select>
+            = 현대
+            = 어반 판타지
+            = 판타지
+            = Sci-Fi
+            = 무협
+            = 시대
+        - 캠페인 배경설정 <textarea>
+    - 캠페인 메인 페이지
+        [p_campaign_main_page.txt]에 정의

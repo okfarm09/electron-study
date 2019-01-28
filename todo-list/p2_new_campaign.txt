@@ -5,8 +5,7 @@
         - 캠페인 포인트 <input number>
         - 캠페인 포인트 min / max 비율 <input number>
         - 캠페인 컨셉 <select>
-            = 현대
-            = 어반 판타지
+            = 현실
             = 판타지
             = Sci-Fi
             = 무협

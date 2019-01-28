@@ -1,6 +1,6 @@
 {
   "name": "my-first-react-app",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "private": true,
   "main": "src/electron-starter.js",
   "homepage": "./",

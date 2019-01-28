@@ -67,7 +67,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "camo": "^0.12.3",
     "electron": "^4.0.2",
     "electron-builder": "^20.38.5",
     "electron-react-devtools": "^0.5.3",

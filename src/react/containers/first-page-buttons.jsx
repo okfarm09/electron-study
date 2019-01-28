@@ -1,34 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import AppButton from "../components/buttons";
-
-const button1DefaultProps = {
-    buttonClass: "btn-green main-btn main-btn-t1-1",
-    elemId: "btn-main-new",
-    buttonText: "새로만들기",
-    buttonClickEvent: () => console.log("main page button1 clicked!")
-};
-
-const button2DefaultProps = {
-    buttonClass: "btn-blue main-btn main-btn-t1-1",
-    elemId: "btn-main-load",
-    buttonText: "불러오기",
-    buttonClickEvent: () => console.log("main page button2 clicked!")
-};
-
-const button3DefaultProps = {
-    buttonClass: "main-btn main-btn-t1-1",
-    elemId: "btn-main-info",
-    buttonText: "도움말",
-    buttonClickEvent: () => console.log("main page button3 clicked!")
-};
-
-const button4DefaultProps = {
-    buttonClass: "btn-red main-btn main-btn-t1-1",
-    elemId: "btn-main-quit",
-    buttonText: "종료하기",
-    buttonClickEvent: () => console.log("main page button4 clicked!")
-};
+import defalutItems from "../utils/first-default-items";
 
 const FirstPageButtons = (props) => {
     return (
@@ -59,10 +32,10 @@ FirstPageButtons.propTypes = {
 }
 
 FirstPageButtons.defaultProps = {
-    button1: button1DefaultProps,
-    button2: button2DefaultProps,
-    button3: button3DefaultProps,
-    button4: button4DefaultProps
+    button1: defalutItems.button1,
+    button2: defalutItems.button2,
+    button3: defalutItems.button3,
+    button4: defalutItems.button4
 }
 
 export default FirstPageButtons;

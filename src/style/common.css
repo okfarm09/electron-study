@@ -1,7 +1,7 @@
 @import "./noto-sans-korean.css";
 
 /* Universal */
-body {margin:0;padding:0;font-family:"Noto Sans Korean";cursor:default;}
+body {margin:0;padding:0;font-family:"Noto Sans Korean", sans-serif;cursor:default;}
 
 /* Lists */
 ul {list-style:none;padding:0;margin:0;}
@@ -59,7 +59,7 @@ li {display:block;}
 .full-form-wrap {border:1px solid gray;margin:0.5em 0;padding:0.75em 1.125em;border-radius:0.5em;}
 .full-form-wrap label {display:block;text-align:left;color:#333;font-size:1em;cursor:text;}
 .full-form-wrap input, .full-form-wrap textarea, .full-form-wrap select {width:100%;border:none;background:none;outline:none;font-size:2em;margin-top:0.375em;}
-.full-form-wrap textarea {height:10em;resize:none;}
+.full-form-wrap textarea {height:10em;resize:none;font-family:"Noto Sans Korean", sans-serif;}
 
 /* Left Navigation */
 .left-nav {position:absolute;top:50%;transform:translateY(-50%);}

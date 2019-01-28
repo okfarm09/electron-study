@@ -3,44 +3,7 @@ import PropTypes from "prop-types";
 import LeftAnchor from "../components/left-a";
 import * as pageActions from "../actions/page-action";
 import { connect } from "react-redux";
-
-const leftNavigationAnchorsDefaultProps = {
-    anchor1: {
-        bgColor: "#778899",
-        elemId: "left-anchor-first",
-        anchorClass: "left-anchor",
-        aText: "초기화면",
-        anchorClickEvent: () => console.log("main page anchor1 clicked! by FirstPage")
-    },
-    anchor2: {
-        bgColor: "#27ae60",
-        elemId: "left-anchor-init",
-        anchorClass: "left-anchor",
-        aText: "새 캠페인",
-        anchorClickEvent: () => console.log("main page anchor2 clicked! by FirstPage")
-    },
-    anchor3: {
-        bgColor: "#3498db",
-        elemId: "left-anchor-load",
-        anchorClass: "left-anchor",
-        aText: "불러오기",
-        anchorClickEvent: () => console.log("main page anchor3 clicked! by FirstPage")
-    },
-    anchor4: {
-        bgColor: "#2d3436",
-        elemId: "left-anchor-info",
-        anchorClass: "left-anchor",
-        aText: "도움말",
-        anchorClickEvent: () => console.log("main page anchor4 clicked! by FirstPage")
-    },
-    anchor5: {
-        bgColor: "#c0392b",
-        elemId: "left-anchor-quit",
-        anchorClass: "left-anchor",
-        aText: "종료",
-        anchorClickEvent: () => console.log("main page anchor5 clicked! by FirstPage")
-    }
-};
+import defalutItems from "../utils/left-nav-default-items";
 
 const closeWindowEvent = () => {
     window.close();
@@ -72,7 +35,7 @@ LeftNavigation.propTypes = {
 }
 
 LeftNavigation.defaultProps = {
-    leftNavigationAnchors: leftNavigationAnchorsDefaultProps
+    leftNavigationAnchors: defalutItems
 }
 
 const mapStateToProps = (state) => ({

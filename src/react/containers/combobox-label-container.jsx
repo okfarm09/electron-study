@@ -3,24 +3,6 @@ import PropTypes from "prop-types";
 import InputLabel from "../components/labels";
 import ComboBox from "../components/combobox";
 
-const comboBoxOptionsDefaultProps = [
-    {
-        optKey: "0",
-        optVal: "",
-        optTxt: "select one"
-    },
-    {
-        optKey: "1",
-        optVal: "no_value1",
-        optTxt: "item1"
-    },
-    {
-        optKey: "2",
-        optVal: "no_value2",
-        optTxt: "item2"
-    }
-];
-
 const ComboBoxLabelContainer = (props) => {
     return (
         <div className={props.wrapClass}>
@@ -47,7 +29,23 @@ ComboBoxLabelContainer.defaultProps = {
     textValue: "",
     inputClass: "input-text-1",
     wrapClass: "wrap-1",
-    options: comboBoxOptionsDefaultProps
+    options: [
+        {
+            optKey: "0",
+            optVal: "",
+            optTxt: "select one"
+        },
+        {
+            optKey: "1",
+            optVal: "no_value1",
+            optTxt: "item1"
+        },
+        {
+            optKey: "2",
+            optVal: "no_value2",
+            optTxt: "item2"
+        }
+    ]
 }
 
 export default ComboBoxLabelContainer;

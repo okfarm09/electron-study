@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import InputTextLabelContainer from "./input-text-label-container";
 import InputNumberLabelContainer from "./input-number-label-container";
@@ -6,20 +6,50 @@ import ComboBoxLabelContainer from "./combobox-label-container";
 import TextAreaLabelContainer from "./textarea-label-container";
 import ButtonAnchor from "../components/button-a";
 import defalutItems from "../utils/init-default-items";
+import ConceptDB from "../dbs/concept-db";
 
-const InitPage1 = (props) => {
-    const campIdNumber = new Date().getTime();
-    return (
-        <div className="init-page-first">
-            <h1>캠페인 기본 설정</h1>
-            <InputTextLabelContainer {...props.campaignTitle} />
-            <InputNumberLabelContainer {...props.campaignPoint} />
-            <ComboBoxLabelContainer {...props.campaignConcept} />
-            <TextAreaLabelContainer {...props.campaignBackground} />
-            <ButtonAnchor {...props.campaignNext} />
-            <input type="hidden" id="campaign-id" value={campIdNumber} />
-        </div>
-    );
+class InitPage1 extends Component {
+    constructor(props) {
+        super(props);
+        this.cdb = new ConceptDB();
+        this.state = {
+            conceptOpts: []
+        }
+        this.initConcepts = this.initConcepts.bind(this);
+    }
+
+    initConcepts() {
+        const cdb = this.cdb;
+        cdb.connectDB();
+        cdb.findAllConcepts().then((r) => {
+            if(r.length < 1) return cdb.insertBulk(defalutItems.conceptOptions);
+            else return r;
+        }).then((r) => {
+            return cdb.findAllConcepts();
+        }).then((r) => {
+            this.setState({
+                conceptOpts: r
+            });
+        });
+    }
+
+    render() {
+        this.initConcepts();
+        const campIdNumber = new Date().getTime();
+        const { campaignTitle, campaignPoint, campaignConcept, campaignBackground, campaignNext } = this.props;
+        campaignConcept.options = this.state.conceptOpts;
+        return (
+            <div className="init-page-first">
+                <h1>캠페인 기본 설정</h1>
+                <InputTextLabelContainer {...campaignTitle} />
+                <InputNumberLabelContainer {...campaignPoint} />
+                <ComboBoxLabelContainer {...campaignConcept} />
+                <TextAreaLabelContainer {...campaignBackground} />
+                <ButtonAnchor {...campaignNext} />
+                <input type="hidden" id="campaign-id" value={campIdNumber} />
+            </div>
+        );
+    }
 }
 
 InitPage1.propTypes = {

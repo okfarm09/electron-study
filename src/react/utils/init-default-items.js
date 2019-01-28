@@ -50,9 +50,9 @@ const conceptOptionsDefaultProps = [
 ];
 
 const campaignConceptDefaultObject = {
-    elemId: "camp-point",
+    elemId: "camp-conc",
     labelText: "캠페인 컨셉 :",
-    labelClass: "init-input-label",
+    labelClass: "init-select-label",
     textValue: "",
     inputClass: "init-combobox",
     wrapClass: "full-form-wrap",
@@ -60,7 +60,7 @@ const campaignConceptDefaultObject = {
 };
 
 const campaignBackgroundDefaultObject = {
-    elemId: "camp-conc",
+    elemId: "camp-back",
     labelText: "캠페인 배경설정 :",
     labelClass: "init-input-label",
     textValue: "",

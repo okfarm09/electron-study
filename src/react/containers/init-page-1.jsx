@@ -16,6 +16,7 @@ class InitPage1 extends Component {
             conceptOpts: []
         }
         this.initConcepts = this.initConcepts.bind(this);
+        this.initConcepts();
     }
 
     initConcepts() {
@@ -34,7 +35,6 @@ class InitPage1 extends Component {
     }
 
     render() {
-        this.initConcepts();
         const campIdNumber = new Date().getTime();
         const { campaignTitle, campaignPoint, campaignConcept, campaignBackground, campaignNext } = this.props;
         campaignConcept.options = this.state.conceptOpts;

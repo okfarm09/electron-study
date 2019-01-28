@@ -7,7 +7,6 @@ class ConceptDB {
         this.dbFactory = null;
         this.database = null;
         this.rArr = [];
-        console.log(path.join(__dirname, "dbs"));
     }
 
     connectDB() {

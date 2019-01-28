@@ -18,32 +18,32 @@ const campaignPointDefaultObject = {
 
 const conceptOptionsDefaultProps = [
     {
-        optKey: "0",
+        optKey: 0,
         optVal: "",
         optTxt: "선택하세요"
     },
     {
-        optKey: "1",
+        optKey: 1,
         optVal: "reality",
         optTxt: "현실적"
     },
     {
-        optKey: "2",
+        optKey: 2,
         optVal: "fantasy",
         optTxt: "판타지"
     },
     {
-        optKey: "3",
+        optKey: 3,
         optVal: "sci_fi",
         optTxt: "SF"
     },
     {
-        optKey: "4",
+        optKey: 4,
         optVal: "wuxia",
         optTxt: "무협"
     },
     {
-        optKey: "5",
+        optKey: 5,
         optVal: "historical",
         optTxt: "시대극"
     }

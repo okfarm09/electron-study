@@ -113,25 +113,37 @@ class EntryPage extends Component {
 
         const modal = modalState === "show"? <BasicModal {...modalPopup} /> : "";
 
-        if(showPage === pages.first) {
-            return (
-                <div>
-                    <FirstPage firstPageButtons={firstPageButtons} />
-                    {modal}
-                </div>
-            );
-        } else if(showPage === pages.initCampaign) {
-            return (
-                <div>
-                    <InitPage leftNavigationAnchors={leftNavigationAnchors} />
-                    {modal}
-                </div>
-            );
-        } else {
-            return (
-                <div>빈 화면...</div>
-            );
+        let pageDiv = "";
+        switch (showPage) {
+            case pages.first:
+                pageDiv = (
+                    <div>
+                        <FirstPage firstPageButtons={firstPageButtons} />
+                        {modal}
+                    </div>
+                );
+                break;
+            
+            case pages.initCampaign:
+                pageDiv = (
+                    <div>
+                        <InitPage leftNavigationAnchors={leftNavigationAnchors} />
+                        {modal}
+                    </div>
+                );
+                break;
+        
+            default:
+                pageDiv = (
+                    <div>
+                        빈 화면...
+                        {modal}
+                    </div>
+                );
+                break;
         }
+
+        return pageDiv;
     }
 }
 

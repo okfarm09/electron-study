@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import LeftAnchor from "../components/left-a";
-import { connect } from "react-redux";
 import defalutItems from "../utils/left-nav-default-items";
 
 class LeftNavigation extends Component {
@@ -27,8 +26,4 @@ LeftNavigation.defaultProps = {
     leftNavigationAnchors: defalutItems
 }
 
-const mapStateToProps = (state) => ({
-    showPage: state.pageChangeData.showPage
-});
-
-export default connect(mapStateToProps, null)(LeftNavigation);
+export default LeftNavigation;

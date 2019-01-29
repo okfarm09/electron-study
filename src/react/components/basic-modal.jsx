@@ -6,7 +6,9 @@ import ButtonAnchor from "./button-a";
 const BasicModal = (props) => {
     const icon = props.icon === "good"? <IoMdCheckmark className={props.iconClass} /> : <IoMdAlert className={props.iconClass} />;
     const buttons = props.buttons.map(
-        item => <ButtonAnchor {...item} />
+        (item, index) => {
+            return <ButtonAnchor key={index} {...item} />
+        }
     );
     return (
         <div className={props.modalClass} id={props.elemId}>

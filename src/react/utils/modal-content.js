@@ -12,6 +12,13 @@ export const cancelQuitBtn = {
     anchorClickEvent: () => console.log("Cancel clicked!")
 };
 
+export const confirmLeaveBtn = {
+    elemId: "leave-btn",
+    anchorClass: "bg-red modal-answer-btn",
+    aText: "떠나기",
+    anchorClickEvent: () => console.log("Leave clicked!")
+}
+
 export const quitApp = {
     icon: "bad",
     iconClass: "color-red modal-icon",

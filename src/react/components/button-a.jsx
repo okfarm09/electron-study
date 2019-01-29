@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ButtonAnchor = (props) => {
     return (
-        <a href="#" id={props.elemId} className={props.anchorClass} onClick={props.anchorClickEvent}>{props.aText}</a>
+        <a id={props.elemId} className={props.anchorClass} onClick={props.anchorClickEvent}>{props.aText}</a>
     );
 }
 

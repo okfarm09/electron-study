@@ -30,7 +30,7 @@ BasicModal.propTypes = {
 
 BasicModal.defaultProps = {
     icon: "bad",
-    iconClass: "icon-red modal-icon",
+    iconClass: "color-red modal-icon",
     buttons: [],
     modalClass: "modal-popup",
     elemId: "box",

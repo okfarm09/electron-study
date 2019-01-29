@@ -7,6 +7,16 @@ body {margin:0;padding:0;font-family:"Noto Sans Korean", sans-serif;cursor:defau
 ul {list-style:none;padding:0;margin:0;}
 li {display:block;}
 
+/* Colors */
+.color-red {color:#e74c3c !important;}
+.color-green {color:#2ecc71 !important;}
+.color-blue {color:#3498db !important;}
+
+/* Background colors */
+.bg-red {background:#e74c3c !important;}
+.bg-green {background:#2ecc71 !important;}
+.bg-blue {background:#3498db !important;}
+
 /* Buttons */
 /* Button colors */
 .btn-blue {border:1px solid #3498db !important;}
@@ -68,12 +78,8 @@ li {display:block;}
 .left-nav a:hover {margin-left:-8em;}
 
 /* Modal Popup */
-.modal-popup {width:60%;overflow:hidden;background:#f1f1f1;box-shadow:0 0 20px black;border-radius:0.5em;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:9999;padding:0.8em;text-align:center;display:none;}
+.modal-popup {width:60%;overflow:hidden;background:#f1f1f1;box-shadow:0 0 20px black;border-radius:0.5em;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:9999;padding:0.8em;text-align:center;display:block;}
 .modal-popup h1 {color: #333;}
 .modal-popup p {width:80%;margin:1em auto;}
 .modal-icon {color:#333;font-size:2em;display:block;margin:0 auto;}
-.icon-red {color:#e74c3c !important;}
-.icon-green {color:#2ecc71 !important;}
-.icon-blue {color:#3498db !important;}
-.modal-good-btn {font-size:1.2em;color:white;padding:0.5em 1.2em;cursor:pointer;background:#3498db;display:inline-block;border-radius:0.25em;}
-.modal-bad-btn {font-size:1.2em;color:white;padding:0.5em 1.2em;cursor:pointer;background:#e74c3c;display:inline-block;border-radius:0.25em;}
+.modal-answer-btn {font-size:1.2em;color:white;padding:0.5em 1.2em;cursor:pointer;display:inline-block;border-radius:0.25em;margin:0 0.2em;}

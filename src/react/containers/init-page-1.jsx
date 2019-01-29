@@ -21,12 +21,12 @@ class InitPage1 extends Component {
 
     initConcepts() {
         const cdb = this.cdb;
-        cdb.connectDB();
-        cdb.findAllConcepts().then((r) => {
+        cdb.connectDB("concepts.db");
+        cdb.findAllWithType("concept").then((r) => {
             if(r.length < 1) return cdb.insertBulk(defalutItems.conceptOptions);
             else return r;
         }).then((r) => {
-            return cdb.findAllConcepts();
+            return cdb.findAllWithType("concept");
         }).then((r) => {
             this.setState({
                 conceptOpts: r

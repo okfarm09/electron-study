@@ -9,13 +9,13 @@ class ConceptDB {
         this.rArr = [];
     }
 
-    connectDB() {
+    connectDB(fName = "dbfile") {
         this.dbFactory = (fn) => Datastore.create({
-            filename: `${path.join(window.require('electron').remote.app.getAppPath(), "dbs")}/dbfile`,
+            filename: `${path.join(window.require('electron').remote.app.getAppPath(), "dbs")}/${fn}`,
             timestampData: true,
             autoload: true
         });
-        this.database = this.dbFactory("concepts.db");
+        this.database = this.dbFactory(fName);
     }
 
     async insertOne(param) {
@@ -42,9 +42,9 @@ class ConceptDB {
         return rArr;
     }
 
-    async findAllConcepts() {
+    async findAllWithType(typeName) {
         let rArr = [];
-        await this.database.find({ type: "concept" }).sort({ optKey : 1 }).then((r) => {
+        await this.database.find({ type: typeName }).sort({ optKey : 1 }).then((r) => {
             rArr = r;
         });
         return rArr;

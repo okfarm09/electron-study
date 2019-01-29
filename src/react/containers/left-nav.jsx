@@ -39,7 +39,7 @@ LeftNavigation.defaultProps = {
 }
 
 const mapStateToProps = (state) => ({
-    showPage: state.showPage
+    showPage: state.pageChangeData.showPage
 });
 
 const mapToDispatch = (dispatch) => ({

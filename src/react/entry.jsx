@@ -24,7 +24,7 @@ class EntryPage extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    showPage: state.showPage
+    showPage: state.pageChangeData.showPage
 });
 
 export default connect(mapStateToProps, null)(EntryPage);

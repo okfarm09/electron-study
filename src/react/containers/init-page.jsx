@@ -27,7 +27,6 @@ class InitPage extends Component {
         const cancelBtn = modalContent.cancelQuitBtn;
         const modalPopup = modalContent.quitApp;
 
-        // quitBtn.anchorClickEvent = closeWindowEvent;
         cancelBtn.anchorClickEvent = modalHide;
 
         anchor1.anchorClickEvent = () => {

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import EntryPage from "./react/entry";
 import Version from "./react/components/version";
+import BasicModal from "./react/components/basic-modal";
 import "./style/common.css";
 
 import { createStore } from "redux";
@@ -20,4 +21,11 @@ ReactDOM.render(
 ReactDOM.render(
     <Version />,
     document.getElementById("under-version")
+);
+
+ReactDOM.render(
+    <Provider store={store}>
+        <BasicModal />
+    </Provider>,
+    document.getElementById("hided-modal")
 );

@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IoMdCheckmark, IoIosClose } from "react-icons/io";
+import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 import ButtonAnchor from "./button-a";
 
 const BasicModal = (props) => {
-    const icon = props.icon === "good"? <IoMdCheckmark className={props.iconClass} /> : <IoIosClose className={props.iconClass} />;
+    const icon = props.icon === "good"? <IoMdCheckmark className={props.iconClass} /> : <IoMdClose className={props.iconClass} />;
     const buttons = props.buttons.map(
         item => <ButtonAnchor {...item} />
     );

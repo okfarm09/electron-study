@@ -66,3 +66,10 @@ li {display:block;}
 .left-nav {position:absolute;top:50%;transform:translateY(-50%);}
 .left-nav a {color:white;font-size:1.2em;display:block;width:8em;padding:0.75em;text-decoration:none;margin:0.5em 0;border-radius:0.4em;margin-left:-15em;transition:0.6s all;}
 .left-nav a:hover {margin-left:-8em;}
+
+/* Modal Popup */
+.modal-popup {width:60%;overflow:hidden;background:#f1f1f1;box-shadow:0 0 20px black;border-radius:0.5em;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:9999;padding:0.8em;text-align:center;display:none;}
+.modal-popup span {color:#2ecc71;font-size:2em;display:block;margin:1em 0;}
+.modal-popup h1 {color: #333;}
+.modal-good-btn {font-size:1.2em;color:white;padding:0.5em 1.2em;cursor:pointer;background:#3498db;display:inline-block;border-radius:0.25em;}
+.modal-bad-btn {font-size:1.2em;color:white;padding:0.5em 1.2em;cursor:pointer;background:#e74c3c;display:inline-block;border-radius:0.25em;}

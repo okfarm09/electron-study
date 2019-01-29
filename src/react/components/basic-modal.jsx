@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IoMdCheckmark, IoMdClose } from "react-icons/io";
+import { IoMdCheckmark, IoMdAlert } from "react-icons/io";
 import ButtonAnchor from "./button-a";
 
 const BasicModal = (props) => {
-    const icon = props.icon === "good"? <IoMdCheckmark className={props.iconClass} /> : <IoMdClose className={props.iconClass} />;
+    const icon = props.icon === "good"? <IoMdCheckmark className={props.iconClass} /> : <IoMdAlert className={props.iconClass} />;
     const buttons = props.buttons.map(
         item => <ButtonAnchor {...item} />
     );
@@ -24,6 +24,8 @@ BasicModal.propTypes = {
     buttons: PropTypes.array,
     modalClass: PropTypes.string,
     elemId: PropTypes.string,
+    title: PropTypes.string,
+    content: PropTypes.string
 }
 
 BasicModal.defaultProps = {
@@ -31,7 +33,9 @@ BasicModal.defaultProps = {
     iconClass: "icon-red modal-icon",
     buttons: [],
     modalClass: "modal-popup",
-    elemId: "box"
+    elemId: "box",
+    title: "빈 팝업",
+    content: "내용은 없습니다."
 }
 
 export default BasicModal;

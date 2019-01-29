@@ -71,7 +71,7 @@ li {display:block;}
 .modal-popup {width:60%;overflow:hidden;background:#f1f1f1;box-shadow:0 0 20px black;border-radius:0.5em;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:9999;padding:0.8em;text-align:center;display:none;}
 .modal-popup h1 {color: #333;}
 .modal-popup p {width:80%;margin:1em auto;}
-.modal-icon {color:#333;font-size:2em;display:block;margin:1em 0;}
+.modal-icon {color:#333;font-size:2em;display:block;margin:0 auto;}
 .icon-red {color:#e74c3c !important;}
 .icon-green {color:#2ecc71 !important;}
 .icon-blue {color:#3498db !important;}

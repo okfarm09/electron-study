@@ -8,7 +8,8 @@ const windowOptions = {
     width:1000,
     height:1000,
     resizable:false,
-    icon: path.join(__dirname, "/../res/icon.png")
+    icon: path.join(__dirname, "/../res/icon.png"),
+    show: false
 }
 
 const createWindow = () => {
@@ -20,6 +21,9 @@ const createWindow = () => {
     });
     win.loadURL(startUrl);
     // win.webContents.openDevTools();
+    win.once("ready-to-show", () => {
+        win.show();
+    });
 
     win.on("close", () => {
         win = null;

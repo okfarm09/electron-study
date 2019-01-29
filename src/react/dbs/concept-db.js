@@ -11,7 +11,7 @@ class ConceptDB {
 
     connectDB() {
         this.dbFactory = (fn) => Datastore.create({
-            filename: `${path.join(__dirname, "dbs")}/dbfile`,
+            filename: `${path.join(window.require('electron').remote.app.getAppPath(), "dbs")}/dbfile`,
             timestampData: true,
             autoload: true
         });

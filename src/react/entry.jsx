@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import FirstPage from "./containers/first-page";
 import InitPage from "./containers/init-page";
 import * as pages from "./utils/page-keys";
-import { connect } from "react-redux";
 import * as pageActions from "./actions/page-action";
 import * as modalActions from "./actions/modal-state-action";
+import * as modalContent from "./utils/modal-content";
 import leftNavItems from "./utils/left-nav-default-items";
 import firstItems from "./utils/first-default-items";
 import BasicModal from "./components/basic-modal";
-import * as modalContent from "./utils/modal-content";
 import LeftNavigation from "./containers/left-nav";
+import { connect } from "react-redux";
 
 const closeWindowEvent = () => {
     window.close();

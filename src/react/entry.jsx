@@ -9,6 +9,7 @@ import leftNavItems from "./utils/left-nav-default-items";
 import firstItems from "./utils/first-default-items";
 import BasicModal from "./components/basic-modal";
 import * as modalContent from "./utils/modal-content";
+import LeftNavigation from "./containers/left-nav";
 
 const closeWindowEvent = () => {
     window.close();
@@ -127,7 +128,8 @@ class EntryPage extends Component {
             case pages.initCampaign:
                 pageDiv = (
                     <div>
-                        <InitPage leftNavigationAnchors={leftNavigationAnchors} />
+                        <InitPage />
+                        <LeftNavigation leftNavigationAnchors={leftNavigationAnchors} />
                         {modal}
                     </div>
                 );
@@ -137,6 +139,7 @@ class EntryPage extends Component {
                 pageDiv = (
                     <div>
                         빈 화면...
+                        <LeftNavigation leftNavigationAnchors={leftNavigationAnchors} />
                         {modal}
                     </div>
                 );

@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "number": 1,
+            "code": "psychic",
+            "name": "초능력"
+        },
+        {
+            "number": 2,
+            "code": "elemental",
+            "name": "원소"
+        },
+        {
+            "number": 3,
+            "code": "spiritual",
+            "name": "영혼"
+        },
+        {
+            "number": 4,
+            "code": "scientific",
+            "name": "과학"
+        },
+        {
+            "number": 5,
+            "code": "secred",
+            "name": "신앙"
+        }
+    ]
+}

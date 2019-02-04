@@ -1,0 +1,5 @@
+1: "psychic", - 초능력
+2: "elemental", - 원소 마법
+3: "spiritual", - 영혼과 관련된 주술
+4: "scientific", - 과학 기술
+5: "secred" - 신성력

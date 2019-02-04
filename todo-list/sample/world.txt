@@ -1,0 +1,5 @@
+"title": "The title of the campaign. Text field",
+"point": "The point of the campaign. Number field",
+"era": "1 - prehistoric, 2 - ancient, 3 - medieval, 4 - modern, 5 - present, 6 - future. Single-select drop down box",
+"techs": "The array of allowed technologies. Multi-select drop down box. See tech.txt",
+"description": "The description of the campaign. Textarea."

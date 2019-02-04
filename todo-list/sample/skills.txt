@@ -1,0 +1,5 @@
+name - 스킬 이름
+group - 스킬 그룹(스킬 숙련 단계가 있는 경우)
+point - 스킬 습득 포인트
+tech - 스킬 기술 그룹 tech.txt
+type - 스킬 유형. skill_type.txt

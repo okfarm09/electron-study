@@ -1,37 +1,41 @@
+number - 아이디 번호
 ====================
-1 차 특성 (불변 특성)
+기본 정보 - 불변 (Basic info - Static)
 --------------------
-name - 이름
-rece - 종족
-ethnicity - 인종
-sex - 성별
-eyes - 눈동자 샥
+race - 종족. races.txt
+ethnicity - 인종. races.txt
+sex - 성별. races.txt
+eyes - 눈동자 색
 appearance - 외견
 ====================
-2 차 특성 (가변 특성)
+기본 정보 - 가변 (Basic info - Mutable)
 --------------------
+name - 이름
 age - 나이
 height - 키
 weight - 체중
 shape - 체형
 hair - 머리색
 ====================
-3 차 특성 (체력 및 정신력)
+3 차 특성 (first status)
 --------------------
-health
-mental
+health - 건강지수 (독립적인 수치)
+- phy - 육체적 건강지수
+- psy - 정신적 건강지수
+action point - 육체적 행동력 (체력, 민첩성, 지구력의 영향을 받음)
+mental point - 정신적 행동력 (지력, 지각력, 집중력의 영향을 받음)
 ====================
-4 차 특성 (스테이터스)
+4 차 특성 (second status)
 --------------------
-phys - 육체적
+physical - 육체적
 - s_str - 체력
-- s_agi - 민첩
+- s_agi - 민첩성
 - s_end - 지구력
-psyc - 정신적
+psychological - 정신적
 - s_int - 지력
-- s_per - 지각
+- s_per - 지각력
 - s_con - 집중력
-cond - 상황적
+conditional - 상황적
 - s_luk - 운
 - s_nat - 성향
 - s_cre - 신용
@@ -39,24 +43,32 @@ cond - 상황적
 - s_blf - 신앙
 - s_cha - 매력
 ====================
-스킬 / 능력
+특징 (Trait)
 --------------------
 ====================
-장점 / 단점
+스킬 / 능력 (Skill / Ability)
 --------------------
 ====================
-배경 설명
+장점 / 단점 (advantage / disadvantage)
 --------------------
-belonging - 소속
+====================
+상태 (condition)
+--------------------
+====================
+배경 설명 (background)
+--------------------
+belonging - 소속 [id, id, ...] 조직 number
 history - 약력
-family - 가족
+family - 가족 [id, id, ...] 캐릭터 number
 groups - 관계된 조직들. [{"id":num, "rate":num}, {} ...]
-- id - 조직 번호. groups.txt
+- id - 조직 number. groups.txt
 - rate - 관계도. group_rate.txt
 habit - 버릇, 습관 
 ====================
-장비
+장비 / 아이템 (equipments / items)
 --------------------
+equips [id, id, ...] 아이템 number
+items [id, id, ...] 아이템 number
 ====================
 소속 세계관
 --------------------

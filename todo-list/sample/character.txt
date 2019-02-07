@@ -17,7 +17,7 @@ weight - 체중
 shape - 체형
 hair - 머리색
 ====================
-3 차 특성 (first status)
+1 차 특성 (first status)
 --------------------
 health - 건강지수 (독립적인 수치)
 - phy - 육체적 건강지수
@@ -25,7 +25,7 @@ health - 건강지수 (독립적인 수치)
 action point - 육체적 행동력 (체력, 민첩성, 지구력의 영향을 받음)
 mental point - 정신적 행동력 (지력, 지각력, 집중력의 영향을 받음)
 ====================
-4 차 특성 (second status)
+2 차 특성 (second status) [(log10(x+1)*10)^2]
 --------------------
 physical - 육체적
 - s_str - 체력

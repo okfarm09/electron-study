@@ -43,6 +43,10 @@ conditional - 상황적
 - s_blf - 신앙
 - s_cha - 매력
 ====================
+3 차 특성 (Third status) [ Driven from 2nd status and other stuffs ]
+--------------------
+lift - 들어올리기
+====================
 특징 (Trait)
 --------------------
 ====================

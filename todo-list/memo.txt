@@ -1,0 +1,85 @@
+tile
+-name
+-type
+-type id
+-tile id
+-religional influence
+-political influence
+-cultural influence
+-transportation
+-economical status
+-local stability
+-holy site
+-ownership
+-religional status
+
+religion
+-name
+-id
+-doctrin
+--group
+-canon
+
+religional status
+-secular
+-cynical
+-sceptical
+-humble
+-pious
+-zealous
+-fanatical
+
+politics
+-ideology
+-edict
+-act
+
+culture
+
+economy
+
+transportation
+stability
+modifier
+
+realm
+-name
+-type
+-id
+-strength
+
+realm state
+-free state
+-tributary state
+-vassal state
+-colonial state
+-puppet state
+
+realm type
+-tribe
+-nomad
+-autocracy
+-theocracy
+-republic
+-feudalism
+
+political type
+-monarchy
+-tyrannos
+-aristocracy
+-oligarchy
+-democracy
+-ochlocracy
+
+
+cult
+sect
+
+person class in cult
+-leity
+-monk
+-deacon
+-presbyter
+-bishop
+-disciple
+-founder
